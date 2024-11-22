@@ -1,0 +1,260 @@
+/* Basic Styling */
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Archivo Black", sans-serif;     
+}
+
+p, a, li, label, figcaption, td {
+  font-family: "IBM Plex Serif", sans-serif;         
+  text-decoration: none;
+}
+
+ul, ol, menu {
+  list-style-type: none;
+}
+
+/* Main Styling of The Website */
+body {
+  grid-template-rows: auto;
+  background-color: #f8f8f8;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  min-height: 100vh; /* Ensure body takes full height */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+
+/* Header Styling */
+header {
+  width: 80%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  background-color: rgba(196, 1, 1, 0.9); /* Semi-transparent background */
+  padding: 0 10%; 
+  position: fixed; /* Fix the header to the top */
+  top: 0; /* Position it at the top */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+header .logo-container {
+  height: 80%;
+}
+
+header .logo-container img {
+  height: 100%;
+  border-radius: 4px;
+}
+
+header menu {
+  display: flex; 
+  align-items: center; 
+}
+
+header menu li {
+  margin-right: 1.5em; 
+}
+
+header menu li a {
+  color: #fff;
+  transition: 0.4s padding ease;
+  line-height: 3px;
+  font-weight: bold; /* Make menu items bold */
+}
+
+header menu li a:hover {
+  border-bottom: 2px dashed white;
+}
+
+/* Mast Section Styling */
+.masthead {
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  background: url(../img/background.jpg) no-repeat center center fixed; /* Fixed background */
+  background-size: cover; /* Cover the entire area */
+}
+
+.masthead::before {
+  content: ""; /* Create a pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1; /* Ensure it is above the background but below the content */
+}
+
+.masthead div {
+  height: 100%;
+  padding: 0 10%;
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  color: #f8f8f8;
+  position: relative; /* Ensure the content is above the overlay */
+  z-index: 2; /* Ensure content is above the overlay */
+  text-align: center; /* Center text */
+}
+
+.masthead div h1 {
+  text-transform: uppercase;
+  font-size: 4em; /* Adjust font size */
+  color: #99a100;
+  margin-bottom: 0.5em; /* Space below heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow */
+}
+
+.masthead div p {
+  font-size: 1.5em; /* Adjust paragraph font size */
+  margin: 0; /* Remove default margin */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+.masthead div p span {
+  font-size: 3em; /* Adjust span font size */
+  color: rgba(196, 1, 1, 0.9);
+}
+
+/* Main Styling */
+main {
+  padding: 5% 10%;
+  margin-top: 110px; /* Add margin to avoid overlap with the header */
+}
+
+.image-gallery {
+  margin-bottom: 2em;
+}
+
+.image-gallery h3 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #2D3B94;
+  margin-bottom: 1em;
+}
+
+ .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 2em; /* Increased space between grid items */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 1em; /* Add padding around each image container */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add shadow transition */
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: 80h; /* Increased height for better visibility */
+  object-fit: cover; /* Maintain aspect ratio while covering the area */
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow to images */
+}
+
+.image-container:hover img {
+  transform: scale(1.05); 
+}
+
+.image-container p {
+  margin-top: 0.5em; /* Space between image and text */
+  text-align: center; /* Center text */
+  font-size: 1.2em; /* Adjust font size for description */
+  color: #333; /* Darker color for better readability */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #2D3B94;
+  color: #f8f8f8;
+  padding: 2% 15%;
+}
+
+footer div a, footer div img {
+  display: block;
+  margin: auto;
+}
+
+footer section {
+  padding: 3%;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer section h2 {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Archivo Black", sans-serif;
+}
+
+footer section.contact-us {
+  text-align: center;
+  border-radius: 5px;
+}
+
+footer section.contact-us div {
+  margin: 7px 0px;
+}
+
+/* Form Styling */
+footer .contact-form label {
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+footer .contact-form input,
+footer textarea {
+  height: 35px;
+  width: 100%;
+  padding: 5px;
+}
+
+footer textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+}
+
+/* Footer Button */
+footer form .primary-btn {
+  font-size: 1.5em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px 10px;
+  transition: all 0.3s ease;
+  background-color: rgba(196, 1, 1, 0.9);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer form .primary-btn:hover {
+  background-color: rgba(196, 1, 1, 0.9);/* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .masthead div h1 {
+    font-size: 3em; /* Adjust heading size */
+  }
+
+  .masthead div p {
+    font-size: 1.2em; /* Adjust paragraph size */
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack images in one column on smaller screens */
+  }
+}

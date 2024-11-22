@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Data of the Website -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment2 : How Sweet Is This">
+  <meta name="robots" content="noIndex, noFollow">
+
+  <!-- Linking the Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Linking the CSS -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+
+  <!-- Title of the Website -->
+  <title>KitKat - Sweet Indulgence</title>
+</head>
+
+<body>
+  <!-- Header of the Website -->
+  <header>
+    <div class="logo-container">
+      <a href="index.html"><img src="./img/company-logo-removebg-preview.png" alt="Logo of the Company"></a>
+    </div>
+
+    <!-- Menu of the Website -->
+    <menu>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#contact-form">Contact Us</a></li>
+    </menu>
+  </header>
+
+  <!-- Section of the Website -->
+  <section class="masthead" id="home">
+    <div>
+      <h1>Smooth and Genuine</h1>
+      <p>
+        <span>Nestle</span>, a beloved brand with a global presence, is celebrated for its crispy wafer and smooth chocolate that melts effortlessly in your mouth. Share the joy with your loved ones by offering them the deliciously indulgent taste of KitKat bars.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main content of the Website -->
+  <main>
+    <!-- Image Gallery Section -->
+    <section class="image-gallery">
+      <h3>Our Delicious Range</h3>
+      <div class="grid-container">
+        <div class="image-container">
+          <img src="./img/nestle-chocolate 1.jpg" alt="Delicious KitKat Chocolate">
+          <p>Delicious KitKat Chocolate</p>
+        </div>
+        <div class="image-container">
+          <img src="./img/nestle-chocolate 3.jpg" alt="KitKat Matcha">
+          <p>KitKat Matcha</p>
+        </div>
+        <div class="image-container">
+          <img src="./img/nestle-chocolate 4.jpg" alt="KitKat Strawberry">
+          <p>KitKat Strawberry</p>
+        </div>
+        <div class="image-container">
+          <img src="./img/nestle-cereal 2.jpg" alt="KitKat Cereal">
+          <p>KitKat Cereal</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Content 
+    <section>
+      <div>
+        <h3>Exceptional Taste</h3>
+        <p>KitKat bars provide a one-of-a-kind experience with their rich, creamy chocolate and crispy wafer that delights both children and adults. With an extensive variety of flavors, an exceptionally smooth texture, and premium packaging, KitKat is truly irresistible to all.</p>
+      </div>
+      <div>
+        <h3>Loved Around the World</h3>
+        <p>Available in over 80 countries, KitKat is a preferred chocolate in many markets. It comes in a large variety of textures, flavors, and pack sizes.</p>
+      </div>
+    </section> -->
+  </main>
+
+  <!-- Footer of the Website -->
+  <footer>
+    <!-- Logo of the company -->
+    <div>
+      <a href="index.html"><img src="./img/company-logo-removebg-preview.png" alt="Logo of the Company"></a>
+    </div>
+    <!-- About Us Section -->
+    <section class="about-us" id="about-us">
+      <h2>About Us</h2>
+      <p>
+        At Nestle, we’re passionate about creating delicious, high-quality chocolate that brings joy to every moment. Founded in 1935, we use only the finest ingredients to craft our treats, ensuring every bite is as fresh and flavorful as possible. Whether you’re celebrating, gifting, or simply indulging, our chocolates are made to make life a little sweeter.
+      </p>
+    </section>
+    <!-- Form in the website -->
+    <section class="contact-form" id="contact-form">
+      <h2>Leave Us a Message</h2>
+      <form action="action.php" enctype="multipart/form-data" method="post">
+        <div>
+          <label for="inp-name">NAME</label>
+          <input type="text" id="inp-name" placeholder="Type Your Name Here" required>
+        </div>
+        <div>
+          <label for="inp-email">E-MAIL</label>
+          <input type="email" id="inp-email" placeholder="Type Your Email Here" required>
+        </div>
+        <div>
+          <label for="inp-placeholder">COMMENT OR MESSAGE</label>
+          <textarea id="inp-placeholder" placeholder="Type Your Message Here" required></textarea>
+        </div>
+        <button type="submit" class="primary-btn">SUBMIT</button>
+      </form>
+    </section>
+    <p>
+      ©2024 | All rights reserved.
+    </p>
+  </footer>
+</body>
+
+</html>
